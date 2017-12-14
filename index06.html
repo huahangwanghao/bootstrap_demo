@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>图标菜单按钮</title>
+		<style>
+			
+			.a{
+				height: 50px;
+				width: 50px;
+				border: 1px solid #ccc;
+				background-color: #eee;
+			}
+			
+		</style>
+	</head>
+	<body style="margin:100px">
+	
+	<i class="glyphicon glyphicon-apple "></i>
+	<span class="glyphicon glyphicon-apple "></span>
+	
+	<button class="btn btn-default btn-lg">
+		<span class="glyphicon glyphicon-apple "></span>
+	</button>
+	
+	<h3>下拉菜单</h3>
+	
+	<div class="dropdown">
+		<button class="btn btn-default" data-toggle="dropdown">
+			下拉菜单
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li class="dropdown-header">网站导航</li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">首页1</a></li>
+			<li><a href="#">首页2</a></li>
+			<li class="disabled"><a href="#" disabled="">首页3</a></li>
+			<li><a href="#">首页4</a></li>
+		</ul>
+	</div>
+	
+	
+	<div class="btn-group">
+		<button class="btn btn-default">左</button>
+		<button class="btn btn-default">中</button>
+		<button class="btn btn-default">右</button>
+		<!--
+        	作者：1178952125@qq.com
+        	时间：2017-12-14
+        	描述：<div class="btn-group"> 这是一个按钮下拉菜单
+        -->
+		<div class="btn-group">
+			<!--
+            	作者：1178952125@qq.com
+            	时间：2017-12-14
+            	描述：dropdown-toggle  是一个让右边可以变成圆边
+            -->
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li class="dropdown-header">网站导航</li>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">首页1</a></li>
+				<li><a href="#">首页2</a></li>
+				<li class="disabled"><a href="#" disabled="">首页3</a></li>
+				<li><a href="#">首页4</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	<!--
+    	作者：1178952125@qq.com
+    	时间：2017-12-14
+    	描述：btn-group-vertical  垂直起来
+    -->
+	<div class=" btn-group-vertical">
+		<button class="btn btn-default">左</button>
+		<button class="btn btn-default">中</button>
+		<button class="btn btn-default">右</button>
+	</div>
+	
+	
+	
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</html>
