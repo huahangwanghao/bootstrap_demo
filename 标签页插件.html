@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>标签页插件</title>
+		<style>
+			a:focus{
+				outline: none;
+			}
+		</style>
+	</head>
+	<body style="margin:100px">
+
+			<!--<ul class="nav nav-tabs">
+					<li class="active"><a href="#a"  data-toggle="tab">a</a></li>
+					<li><a href="#b"  data-toggle="tab">b</a></li>
+					<li><a href="#c"  data-toggle="tab">c</a></li>
+					<li><a href="#d"  data-toggle="tab">d</a></li>
+			</ul>
+				
+			<div class="tab-content">
+				<div class="tab-pane active fade"  id="a">abc</div>
+				<div class="tab-pane fade" id="b">123</div>
+				<div class="tab-pane fade" id="c">456</div>
+				<div class="tab-pane fade" id="d">789</div>
+			</div>-->
+			
+			
+			<ul class="nav nav-pills">
+					<li class="active"><a href="#a"  >a</a></li>
+					<li><a href="#b" >b</a></li>
+					<li><a href="#c"  >c</a></li>
+					<li><a href="#d" >d</a></li>
+			</ul>
+				
+			<div class="tab-content">
+				<div class="tab-pane active fade in"  id="a">abc</div>
+				<div class="tab-pane fade" id="b">123</div>
+				<div class="tab-pane fade" id="c">456</div>
+				<div class="tab-pane fade" id="d">789</div>
+			</div>
+			
+			
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script>
+		$("a").on("click",function(e){
+			$(this).tab("show");	
+		});
+		$("a").on("show.bs.tab",function(e){
+			alert(123);	
+		});
+		
+	</script>
+</html>

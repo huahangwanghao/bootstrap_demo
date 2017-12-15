@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>按钮和折叠插件</title>
+		<style>
+			
+		</style>
+	</head>
+	<body style="margin:100px">
+
+				<!--
+                	作者：1178952125@qq.com
+                	时间：2017-12-15
+                	描述：data-toggle="button"  可以表示让按钮处于选中和未选中状态
+                -->
+				<button class="btn btn-default" data-toggle="button" autocomplete="off">按钮</button>
+				<button class="btn btn-default" data-toggle="button">按钮</button>
+
+
+			<div class="btn-group" data-toggle="buttons">
+				<label  class="btn btn-default active">  <!-- active 是表面现象-->
+					<input type="radio" name="sex">男  <!--active是真实的选中-->
+				</label>
+				
+				<label  class="btn btn-default">
+					<input type="radio" name="sex" >女
+				</label>
+				
+			</div>
+			
+			
+			
+			<div class="btn-group" data-toggle="buttons">
+				<label  class="btn btn-default active">  <!-- active 是表面现象-->
+					<input type="checkbox" name="sex">男  <!--active是真实的选中-->
+				</label>
+				
+				<label  class="btn btn-default">
+					<input type="checkbox" name="sex" >女
+				</label>
+				<label  class="btn btn-default ">  <!-- active 是表面现象-->
+					<input type="checkbox" name="sex">男  <!--active是真实的选中-->
+				</label>
+				
+				<label  class="btn btn-default">
+					<input type="checkbox" name="sex" >女
+				</label>
+				
+			</div>
+
+
+
+		<!--
+        	作者：1178952125@qq.com
+        	时间：2017-12-15
+        	描述：加载状态
+        -->
+			
+			<button id="loading" class="btn btn-default" data-loading-test="loading">上传按钮</button>
+
+
+     <strong><hr></hr></strong>	<hr  />
+
+
+
+	<button class="btn btn-default" data-toggle="collapse" data-target="#my">隐藏/显示</button>
+		<div  id="my" class="collapse">
+			<div class="well">  <!--well 是让有背景-->
+				里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.
+				里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.
+				里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.
+				里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.
+				里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.里面是内容.
+			</div>
+		</div>
+
+
+	<p>手风琴效果</p>
+	
+	<div class="panel-group" id="f">
+		<div class="panel panel-default">
+			<div class="panel-heading " >
+				<h4 class="panel-title">
+					<a href="#one" data-toggle="collapse" data-parent="#f">第一部分</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse " id="one">
+				<div class="panel-body">
+					q234123234
+				</div>
+			</div>
+			
+		</div>
+		<div class="panel panel-default" >
+			<div class="panel-heading " >
+				<h4 class="panel-title">
+					<a href="#two" data-toggle="collapse" data-parent="#f">第2部分</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse " id="two">
+				<div class="panel-body">
+					q234123234
+				</div>
+			</div>
+			
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading " >
+				<h4 class="panel-title">
+					<a href="#three" data-toggle="collapse" data-parent="#f">第3部分</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse " id="three">
+				<div class="panel-body">
+					q234123234
+				</div>
+			</div>
+			
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading " >
+				<h4 class="panel-title">
+					<a href="#four" data-toggle="collapse" data-parent="#f">第4部分</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse " id="four">
+				<div class="panel-body">
+					q234123234
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+
+
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script>
+		
+		$("#loading").on('click',function(){
+			// .button() 其实是button按钮的一个方法
+			var load=$(this).button("loading");
+			setTimeout(function(){
+				load.button("reset");
+			},1000);
+		});
+		
+	</script>
+</html>
